@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/jquery-3.4.1.js"></script>
+        <script src="js/scripts.js"></script>
+        
+
+    </head>
+    <body>
+        <div class="container">
+            <h1>Survey</h1>
+            <form id="formID">
+                <!----Full name text box-->
+                <div class="form-group">
+                    <label for="fullnameID">Full name</label>
+                    <input id="fullnameID" class="form-control" type="text">
+                </div>
+                <!-----Email address-->
+                <div class="form-group">
+                    <label for="emailID">Email</label>
+                    <input id="emailID" class="form-control" type="text">
+                </div>
+                <!-----Age select from list   -->
+                <div class="form-group">
+                    <label for="ageID">Age</label>
+                    <select class="form-control" id="ageID">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                     </select>
+                </div>
+                <!-----Gender select from list-->
+                <div class="form-group">
+                    <label for="genderID">Gender</label>
+                    <select class="form-control" id="genderID" required>
+                    <option disabled value>select gender</option>
+                    <option>male</option>
+                    <option>female</option>
+                    </select>
+                </div>
+                <!-----Rating-->
+                <div class="form-group">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="s" value="satisfied">
+                                Satisfied
+                            </label>
+                        </div>
+                        <div class="radio">
+                                <label>
+                                    <input type="radio" name="s" value="netural">
+                                    Natural
+                                </label>
+                        </div>
+                        <div class="radio">
+                                <label>
+                                    <input type="radio" name="s" value="unsetisfied">
+                                    Unsatisfied
+                                </label>
+                            </div>
+
+                </div>
+
+            </form>
+
+
+        </div>
+        
+    </body>
+</html>
